@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+// This is code for a factorial algorithm. This is the first recursive algorithm I have ever tried to write.
+// I will edit this firther.
+
 int factor(int a);
 
 int main(void)
@@ -11,20 +14,24 @@ int main(void)
     p = &x;
     factor(x);
 }
-
+//
 int factor(int a)
 {
     for (int i = 0; i < a;)
     {
         if (a == 1)
         {
-            printf("%i", a);
+            printf("Successful program\n");
             return 0;
         }
         else
         {
             i++;
-            return a * factor(a - 1);
+            printf("Value of a factor %i\n", a);
+            int h = a * a - 1;
+            printf("Value of recursed integer %i\n", h);
+            return a * factor(a -1);
+            printf("Value of a factor %i\n", a);
         }
     }
     return 0;
