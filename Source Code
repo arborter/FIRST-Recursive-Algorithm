@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-// This is code for a factorial algorithm. This is the first recursive algorithm I have ever tried to write.
-// I will edit this firther.
 
 int factor(int a);
 
